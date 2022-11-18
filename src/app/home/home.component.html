@@ -8,3 +8,57 @@
  </div>   
 
 </div>
+<section>
+    <app-descripcion></app-descripcion>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+
+            <div class="col" *ngFor="let habitacion of habitaciones">
+                <div class="card h-100 shadow">
+                    <img src={{habitacion.fotografias[0]}} alt="foto" class="img-fluid w-100 h-100">
+                    <h3 class="text-center fw-bold">{{habitacion.nombre}}</h3>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">RECOMENDADO</th>
+                            <th scope="col">OBLIGATORIO</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">*</th>
+                            <td>...</td>
+                            <td>...</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">*</th>
+                            <td>.</td>
+                            <td>.</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row"></th>
+                            <td colspan="2">.</td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+<section>
+    <br><br><br><br><br>
+</section>
+<footer>
+    <app-footer></app-footer>
+</footer>
